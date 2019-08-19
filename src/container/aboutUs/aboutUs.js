@@ -81,20 +81,20 @@ class AboutUsComponent extends Component {
 
                            <h3 className="team-title">مدیران ارشد</h3>
                            <div className="team-container"> 
-                                {_renderTeam(img03,'سهیلا تاپ','مدیر ارشد اجرایی')} 
                                 {_renderTeam(img04,'حسین رضایی','مدیر تحقیق و توسعه')} 
+                                {_renderTeam(img03,'سهیلا تاپ','مدیر اجرایی')} 
                                 {_renderTeam(img08,'علی کاظمی','مدیر IT')} 
-                                {_renderTeam(img06,'یزدان غلامی','مدیر ارشد طراحی')} 
+                                {_renderTeam(img06,'یزدان غلامی','مدیر طراحی')} 
                                 {_renderTeam(img10,'فائقه غلامی','مدیر واحد حقوقی و قراردادها')}  
                            </div>
 
                            <h3 className="team-title">کارشناسان</h3>
                            <div className="team-container"> 
-                                {_renderTeam(img07,'متینا طباطبایی','کارشناس طراحی')} 
-                                {_renderTeam(img05,'زهره باقری','کارشناس IT')} 
-                                {_renderTeam(img09,'زهره ابراهیمی','کارشناس فروش و بازاریابی')} 
-                                {_renderTeam(img12,'رخشان محمدی','کارشناس طراحی')} 
-                                {_renderTeam(img11,'فاطمه یدی نژاد','کارشناس  فناوری')} 
+                                {_renderTeam(img07,'متینا طباطبایی',' طراحی')} 
+                                {_renderTeam(img05,'زهره باقری',' IT')} 
+                                {_renderTeam(img09,'زهره ابراهیمی',' فروش و بازاریابی')} 
+                                {_renderTeam(img12,'رخشان محمدی',' طراحی')} 
+                                {_renderTeam(img11,'فاطمه یدی نژاد','  فناوری')} 
                                 {/* {_renderTeam(imgWoman,'زهره موسویان','کارشناس  فن آوری')}  */}
                            </div>
 
