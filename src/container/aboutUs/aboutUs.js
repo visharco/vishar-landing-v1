@@ -107,7 +107,7 @@ class AboutUsComponent extends Component {
                     </div>
                 </div>
 
-                 <div className="aboutUsVideo" >
+                 {/* <div className="aboutUsVideo" >
                     <div className="container-fluid">
                         <div className="container">
                             <h1 className="aboutUs-title" >ویدیوی ما </h1>
@@ -121,7 +121,7 @@ class AboutUsComponent extends Component {
 
                         </div>
                     </div>
-                </div> 
+                </div>  */}
 
             </div>
         );
