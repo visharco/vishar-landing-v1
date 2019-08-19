@@ -81,11 +81,11 @@ class AboutUsComponent extends Component {
 
                            <h3 className="team-title">مدیران ارشد</h3>
                            <div className="team-container"> 
-                                {_renderTeam(img04,'حسین رضایی','مدیر تحقیق و توسعه')} 
-                                {_renderTeam(img03,'سهیلا تاپ','مدیر اجرایی')} 
-                                {_renderTeam(img08,'علی کاظمی','مدیر IT')} 
-                                {_renderTeam(img06,'یزدان غلامی','مدیر طراحی')} 
-                                {_renderTeam(img10,'فائقه غلامی','مدیر واحد حقوقی و قراردادها')}  
+                                {_renderTeam(img04,'حسین رضایی',' تحقیق و توسعه')} 
+                                {_renderTeam(img03,'سهیلا تاپ',' اجرایی')} 
+                                {_renderTeam(img08,'علی کاظمی',' IT')} 
+                                {_renderTeam(img06,'یزدان غلامی',' طراحی')} 
+                                {_renderTeam(img10,'فائقه غلامی',' واحد حقوقی و قراردادها')}  
                            </div>
 
                            <h3 className="team-title">کارشناسان</h3>
