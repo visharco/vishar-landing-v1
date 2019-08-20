@@ -1,92 +1,16 @@
-
-.designerLogoDetail{
-    padding: 50px;
-    background-color: #f9f9f9;
-    border: 2px solid #ededed;
-    width: 400px;
-    height: 300px;
-
+.designerLogoDetail{padding:50px;background-color:#f9f9f9;border:2px solid #ededed;width:400px;height:300px}
+.DLD-time{color:#b8b8b8;padding:30px 0;font-size:12px;text-align:right}
+.DLD-time span{margin:0 5px}
+.DLD-right{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;text-align:right;-webkit-box-pack:end;justify-content:flex-end}
+.DLD-right-title{margin-right:20px}
+.DLD-right-title h1{font-size:22px}
+.DLD-right-title h2{color:#6f6f6f;font-weight:300;font-size:18px}
+.DLD-right img{width:100px;height:100px;border-radius:50%;border:2px solid #bebebe;box-shadow:0 6px 6px 1px #c5c5c5}
+.DLD-icon-box{display:-webkit-box;display:flex;justify-content:space-around}
+.DLD-icons{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
+.DLD-icons img{width:15px}
+.DLD-icons span{font-size:12px;padding:0 5px}
+@media screen and (max-width:900px){.designerLogoDetail{width:calc(50% - 10px)}
 }
-
-.DLD-time{
-    color: #b8b8b8;
-    padding: 30px 0px;
-    font-size: 12px;
-    text-align: right;
-}
-.DLD-time span{
-margin: 0px 5px;
-}
-
-.DLD-right{
-display: -webkit-box;
-display: flex;
--webkit-box-align: center;
-        align-items: center;
-text-align: right;
--webkit-box-pack: end;
-        justify-content: flex-end;
-}
-
-.DLD-right-title{
-    margin-right: 20px;
-}
-.DLD-right-title h1{
-    font-size: 22px;
-}
-.DLD-right-title h2{
-    color: #6f6f6f;
-    font-weight: 300;
-    font-size: 18px;
-}
-
-.DLD-right img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #bebebe;
-    box-shadow: 0px 6px 6px 1px #c5c5c5;
-}
-
-.DLD-time{
-
-}
-
-.DLD-icon-box{
-display: -webkit-box;
-display: flex;
-justify-content: space-around;
-}
-
-.DLD-icons{
-display: -webkit-box;
-display: flex;
--webkit-box-align: center;
-        align-items: center;
-}
-
-.DLD-icons img{
-width: 15px;
-}
-
-.DLD-icons span{
-font-size: 12px;
-padding: 0px 5px ;
-}
-
-@media screen and (max-width: 900px){
-    .designerLogoDetail {
-        width: calc(50% - 10px);
-    }
-
-}
-
-@media screen and (max-width: 700px){
-    .designerLogoDetail {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 20px;
-        
-    }
-
+@media screen and (max-width:700px){.designerLogoDetail{width:100%;margin-bottom:20px;padding:20px}
 }
