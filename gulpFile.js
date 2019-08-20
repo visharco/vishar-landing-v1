@@ -1,6 +1,7 @@
 
 var gulp        = require('gulp'),
-   autoprefixer = require('gulp-autoprefixer');
+   autoprefixer = require('gulp-autoprefixer'),
+   minifyCSS    = require('gulp-minify-css');
 
 
  
@@ -12,3 +13,13 @@ var gulp        = require('gulp'),
         }))
         .pipe(gulp.dest('./src'))
  })
+
+
+ gulp.task('minify-css', function() {
+    return gulp.src('./src/**/*.css')
+      .pipe(minifyCSS({keepBreaks:true}))
+      .pipe(gulp.dest('./src'))
+  });
+
+
+ 
