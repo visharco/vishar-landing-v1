@@ -14,8 +14,11 @@ background-color: #f7f7f7;
 .customerComment .container{
     margin: auto;
     padding: 50px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     background-color: #f7f7f7;
 }
 
@@ -28,14 +31,20 @@ background-color: #f7f7f7;
     padding: 0px 0px 50px;
 }
 .customer-box{
+    display: -webkit-box !important;
     display: flex !important;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 50px 100px;
 }
 .customer-detail{
+display: -webkit-box;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+        align-items: center;
 margin-bottom: 20px;
 
 
@@ -75,11 +84,13 @@ font-size:18px;
 .customerComment .slick-prev:before, .slick-next:before{
     color: rgba(59, 59, 59, 0.2);
     font-size: 25px;
+    -webkit-transition: all .1s linear;
     transition: all .1s linear;
 }
 
 .customerComment .slick-prev:before, .slick-next:before:hover{
     color: rgba(59, 59, 59, 0.8);
+    -webkit-transition: all .1s linear;
     transition: all .1s linear;
 
 }
@@ -108,8 +119,11 @@ padding: 0px;
         padding: 20px;
     }
     .slick-slide > div > div > div {
+        display: -webkit-box !important;
         display: flex !important;
-        flex-direction: column-reverse !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: reverse !important;
+                flex-direction: column-reverse !important;
     }
     .customer-box img{
         margin: 0px 0px 10px 0px;

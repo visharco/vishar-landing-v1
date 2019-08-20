@@ -14,8 +14,11 @@
 .sampleDesigns .container{
     margin: auto;
     padding: 50px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     /* background-color: #f7f7f7; */
 }
 
@@ -35,11 +38,13 @@
 .sampleDesigns .slick-prev:before, .slick-next:before{
     color: rgba(59, 59, 59, 0.2);
     font-size: 25px;
+    -webkit-transition: all .1s linear;
     transition: all .1s linear;
 }
 
 .sampleDesigns .slick-prev:before, .slick-next:before:hover{
     color: rgba(59, 59, 59, 0.8);
+    -webkit-transition: all .1s linear;
     transition: all .1s linear;
 
 }
@@ -48,6 +53,7 @@
     background-size: cover;
     background-repeat:no-repeat;
     width: 300px; height: 300px;
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;
      margin:auto ;
      position:relative;
@@ -67,6 +73,7 @@
     height: 150px;
     -webkit-filter: grayscale(200%);
     filter: grayscale(-105%);
+    -webkit-transition:all .2s linear;
     transition:all .2s linear;
     opacity: 0.4;
 

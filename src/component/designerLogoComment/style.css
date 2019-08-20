@@ -5,9 +5,11 @@
     border: 2px solid #ededed;
 }
 .DLC-box{
+    display: -webkit-box;
     display: flex;
     direction: rtl;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
 }
 .DLC-right-title h1{
     margin-bottom: 5px;
@@ -21,9 +23,11 @@
     margin-right: 15px;
 }
 .DLC-right {
+    display: -webkit-box;
     display: flex;
     text-align: right;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 .DLC-right img{
     width: 60px;
@@ -34,8 +38,10 @@
 }
 
 .DLC-report {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 
 }
 .DLC-report img{

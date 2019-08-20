@@ -13,10 +13,10 @@
     width: 100%;
     box-shadow: 0 3px 11px rgba(140, 140, 140, 0.23);
     height: 80px;
-    display: -webkit-flex;
+    display: -webkit-box;
     display: flex;
-    -webkit-align-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     z-index: 9999;
 }
 
@@ -27,28 +27,39 @@
 
 .header .container{
     margin: auto; 
+    display: -webkit-box; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .header-logo a{
+display: -webkit-box;
 display: flex;
 }
 
 .headerMenuUp{
+    display: -webkit-box;
     display: flex;
 }
 .headerMenu{
+display: -webkit-box;
 display: flex;
-flex-direction: row;
-justify-content: space-between;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+        flex-direction: row;
+-webkit-box-pack: justify;
+        justify-content: space-between;
 }
 
 .menu-links{
+display: -webkit-box;
 display: flex;
 font-weight: 900;
-align-items: center;
+-webkit-box-align: center;
+        align-items: center;
 margin-left: 40px;
 }
 .menu-links a{
@@ -56,11 +67,13 @@ margin-left: 40px;
     margin: 0px 5px;
     border-radius: 30px;
     position: relative;
+    -webkit-transition:all .2s linear;
     transition:all .2s linear;
 
 }
 .menu-links a:hover{
     border: 2px solid #333;
+    -webkit-transition:all .2s linear;
     transition:all .2s linear;
 }
 
@@ -71,18 +84,25 @@ margin-left: 40px;
 .menu-link{
     margin: 10px;
     padding: 0px 5px;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     cursor: pointer;
 }
 
 .menu-login{
 padding: 10px;
+display:-webkit-box;
 display:flex;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+        align-items: center;
 cursor: pointer;
+-webkit-transition:all .2s linear;
 transition:all .2s linear
 
 }
@@ -98,12 +118,14 @@ transition:all .2s linear
     text-align: center;
     font-weight: 900;
     border: 2px solid #419cdb;
+    -webkit-transition:all .2s linear;
     transition:all .2s linear
 
 }
 
 .menu-login-text:hover{
     background-color: transparent;
+    -webkit-transition:all .2s linear;
     transition:all .2s linear;
     color: #419cdb
 }
@@ -113,12 +135,16 @@ transition:all .2s linear
 }
 
 .menuTablet{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
 }
 .headerMenuDown{
+    display: -webkit-box;
     display: flex;
 }
 @media screen and (max-width: 900px){
@@ -148,14 +174,20 @@ transition:all .2s linear
 .headerMenuDown{
     position: absolute;
     height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     top: 0;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     width: 100%;
     left: 0;
     background-color: #c1c1c1;
+    display: -webkit-box;
     display: flex;
+    -webkit-transition: all .4s cubic-bezier(0.000, 0.880, 0.190, 1.095);
     transition: all .4s cubic-bezier(0.000, 0.880, 0.190, 1.095);
     z-index: 2;
     flex-direction: column-reverse;
@@ -163,15 +195,21 @@ transition:all .2s linear
 .headerMenuUp{
     position: absolute;
     height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     top: 0;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     width: 100%;
     left: 0;
     background-color: #c1c1c1;
+    display: -webkit-box;
     display: flex;
     top: -1000px;
+    -webkit-transition: all .4s cubic-bezier(0.000, 0.880, 0.190, 1.095);
     transition: all .4s cubic-bezier(0.000, 0.880, 0.190, 1.095);
     z-index: 2;
     flex-direction: column-reverse;
@@ -179,7 +217,9 @@ transition:all .2s linear
 }
 
 .menu-links{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     margin: 0px;
     width: 100%;
 }
@@ -234,34 +274,52 @@ padding: 0;
 }
 .line1{
     top: 14px;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: top .2s .2s linear ,-webkit-transform  .2s linear;
+    transition: top .2s .2s linear ,-webkit-transform  .2s linear;
     transition: transform  .2s linear ,top .2s .2s linear;
+    transition: transform  .2s linear ,top .2s .2s linear ,-webkit-transform  .2s linear;
 }
 .line2{
     top: 25px;
     opacity: 1;
+    -webkit-transition: opacity .2s .2s linear;
     transition: opacity .2s .2s linear;
 
 }
 .line3{
     top: 36px;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: top .2s .2s linear ,-webkit-transform  .2s linear;
+    transition: top .2s .2s linear ,-webkit-transform  .2s linear;
     transition: transform  .2s linear ,top .2s .2s linear;
+    transition: transform  .2s linear ,top .2s .2s linear ,-webkit-transform  .2s linear;
 }
 .line1move{
     top: 26px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: top  .2s linear ,-webkit-transform  .2s  .2s linear;
+    transition: top  .2s linear ,-webkit-transform  .2s  .2s linear;
     transition: transform  .2s  .2s linear ,top  .2s linear;
+    transition: transform  .2s  .2s linear ,top  .2s linear ,-webkit-transform  .2s  .2s linear;
 }
 .line2move{
     top: 26px;
     opacity: 0;
+    -webkit-transition: opacity  .2s linear;
     transition: opacity  .2s linear;
 }
 .line3move{
     top: 26px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: top .2s linear , -webkit-transform  .2s  .2s linear;
+    transition: top .2s linear , -webkit-transform  .2s  .2s linear;
     transition: transform  .2s  .2s linear , top .2s linear;
+    transition: transform  .2s  .2s linear , top .2s linear , -webkit-transform  .2s  .2s linear;
 }
   
 

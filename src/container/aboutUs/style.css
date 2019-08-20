@@ -15,10 +15,14 @@
 }
 
 .team-avatar {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     margin: 5px 15px;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 
 
 }
@@ -54,10 +58,15 @@
 .team-container {
     width: 100%; 
     padding: 20px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 
 
 }
@@ -81,6 +90,7 @@
 }
 
 .aboutUs-box{
+display: -webkit-box;
 display: flex;
 }
 
@@ -152,15 +162,20 @@ max-width: 100%;
 }
 
 .aboutUsVideo .video-react .video-react-control:before,.aboutUsVideo .video-react .video-react-big-play-button:before{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 
 @media screen and (max-width: 900px){
     .aboutUs-box{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     .aboutUs-text {
         width: 100%;
@@ -190,7 +205,9 @@ max-width: 100%;
         height: 1.5em;
     }
     .team-container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
         
     }
 

@@ -151,3 +151,10 @@ p {
 	direction: rtl;
 	
 }
+
+
+.rotate {
+	-webkit-transform:  rotate(90deg);
+	        transform:  rotate(90deg);
+	       
+}

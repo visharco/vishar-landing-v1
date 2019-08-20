@@ -19,10 +19,13 @@ margin: 0px 5px;
 }
 
 .DLD-right{
+display: -webkit-box;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+        align-items: center;
 text-align: right;
-justify-content: flex-end;
+-webkit-box-pack: end;
+        justify-content: flex-end;
 }
 
 .DLD-right-title{
@@ -50,13 +53,16 @@ justify-content: flex-end;
 }
 
 .DLD-icon-box{
+display: -webkit-box;
 display: flex;
 justify-content: space-around;
 }
 
 .DLD-icons{
+display: -webkit-box;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+        align-items: center;
 }
 
 .DLD-icons img{

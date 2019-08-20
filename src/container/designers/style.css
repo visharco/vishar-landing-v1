@@ -52,6 +52,7 @@ color: #333;
 
 
 .designers-search-box{
+    display: -webkit-box;
     display: flex;
     width: 90%;
     margin: 50px auto;
@@ -66,10 +67,12 @@ color: #333;
     margin: auto;
     padding: 0px 30px;
     direction: rtl;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;     
 }
 .designers-search-box input:focus{
     box-shadow: 0px 6px 15px -6px #80808094;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;     
 }
 
@@ -86,18 +89,24 @@ color: #333;
 
 .designers-search-box img:hover{
     opacity: .8;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
 
 .designers-search-result{
+    display: -webkit-box;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
     flex-wrap: wrap;
 }
 .pagination{
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 50px;
     font-size: 25px;
     font-weight: 900;
@@ -106,18 +115,23 @@ color: #333;
 .pagination-number{
     width: 70px;
     height: 70px;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     color: #555;
     cursor: pointer;
     border-radius: 50%;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
 
 
 .designers-search-number:hover{
     background-color: #d9d9d9;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
 

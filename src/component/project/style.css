@@ -1,12 +1,15 @@
 .project{
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding: 10px 20px;
     background-color: #f9f9f9;
     border: 2px solid #f7f7f7;
     border-radius: 10px;
     margin-bottom: 20px;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
     cursor: pointer;
     position: relative;
@@ -14,13 +17,16 @@
 .project:hover{
     background-color: #f5f5f5;
     box-shadow: 0 7px 22px 0 hsla(0,0%,50.2%,.17);
+    -webkit-transition: all .1s linear;
     transition: all .1s linear;
 }
 
 .p-right{
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     width: 100%;
 }
 
@@ -33,9 +39,13 @@
 .p-right-title{
     text-align: right;
     margin-right: 20px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     min-height: 180px;
     padding: 10px 0px;
     direction: rtl;
@@ -52,6 +62,7 @@
 }
 
 .p-right-tags{
+    display: -webkit-box;
     display: flex;
     direction: rtl;
 }
@@ -64,15 +75,20 @@
     font-weight: 900;
     margin-left:10px; 
     border-radius: 30px;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     color: #ababab;
     cursor: pointer;
 }
 .p-left{
     height: 180px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     justify-content: space-around;
     position: relative;
 }
@@ -107,10 +123,14 @@
 
 }
 .p-icons{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     padding: 30px 0px 0px;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 .p-icons img{
     width: 20px;
@@ -143,11 +163,14 @@
 }
 
 .p-icon{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
     text-align: right;
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
 }
 .p-desabled{
     background-color: transparent !important;
@@ -161,7 +184,9 @@
 @media screen and (max-width: 700px){
 
     .project{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+                flex-direction: column-reverse;
         padding: 0;
         position: relative;
     }
@@ -170,14 +195,20 @@
         position: unset;
     }
     .p-icons{
-        flex-direction: row;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        -webkit-box-align: center;
+                align-items: center;
         width: 100%;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
     }
     .p-icon{
+        display: -webkit-box;
         display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     }
     .p-right{
         padding: 40px 20px 20px;
@@ -209,7 +240,9 @@
 @media screen and (max-width: 500px){
 
 .p-right{
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
     padding: 20px;
 }
 .p-right img{
@@ -223,7 +256,8 @@
     background-color: #f9f9f9;
 }
 .p-left{
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 .p-icons{
     padding: 0px;

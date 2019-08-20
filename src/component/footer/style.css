@@ -16,9 +16,12 @@
 }
 
 .e-namad-container {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     position: absolute;
     margin-top: 22px;
 }
@@ -29,6 +32,7 @@
 }
 
 .footer .container{
+    display: -webkit-box;
     display: flex;
     padding: 50px;
 }
@@ -47,9 +51,12 @@
     width: 195px;
     height: 202px;
     background-color: white;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     border-radius: 5px;
     border: 1px solid #131313;
     
@@ -57,11 +64,13 @@
 }
 
 .footer-menu{
+    display: -webkit-box;
     display: flex;
     color: #fff;
     /* width: 300px; */
     margin: auto;   
-    justify-content: center;
+    -webkit-box-pack: center;   
+            justify-content: center;
 
 }
 .footer-menu ul{
@@ -97,8 +106,10 @@
 .newslater-container{
      
     height: 55px; 
-    justify-content: center;
+    -webkit-box-pack: center; 
+            justify-content: center;
     text-align: center;
+    display: -webkit-box;
     display: flex;
 
 
@@ -106,9 +117,11 @@
 }
 
 .footer-social-network{
+    display: -webkit-box;
     display: flex;
     text-align: center;
-    justify-content:center;
+    -webkit-box-pack:center;
+            justify-content:center;
     padding: 30px 0;
 
 }
@@ -118,14 +131,19 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     margin: 0px 10px;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
 .footer-social-network > div:hover{
     opacity: .8;
+    -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
 .footer-social{
@@ -156,6 +174,7 @@
     height: 50px;
     border-radius: 0 50px 50px 0;
     border: 1px solid #0090CF;
+    -webkit-transition: ease 500ms;
     transition: ease 500ms;
     line-height: 50px;
     font-size: 16px;
@@ -174,15 +193,19 @@
 }
 
 .F-SN{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 
 @media screen and (max-width: 800px){
     
     .footer .container{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+                flex-direction: column-reverse;
     }
     .footer-split {
         width: 100%;

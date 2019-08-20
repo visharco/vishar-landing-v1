@@ -11,6 +11,7 @@
     border-radius: 5px;
     color: #223254;
     background-color: #fff;
+    -webkit-transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
     transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
     resize: none;
     min-height: 200px;
@@ -37,8 +38,12 @@
     top: -8px;
     font-size: 10px;
     z-index: 4;
+    -webkit-transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
     transition: all .3s cubic-bezier(0.000, 0.555, 0.025, 0.985);
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 
   }
 
