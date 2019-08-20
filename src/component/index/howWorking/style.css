@@ -6,6 +6,7 @@ p{text-align:justify}
 .howWorking .container-fluid{padding:0;margin:0;max-width:100%}
 .main-prt-one{background-image:url(../../../assets/images/index/main/01.jpg)}
 .main-text-center{display:-webkit-box;display:flex;-webkit-box-orient:vertical;flex-direction:column;-webkit-box-pack:center;justify-content:center}
+.how-right,.row{display:-webkit-box;-webkit-box-direction:normal}
 .how-left,.how-right,.row{-webkit-box-orient:horizontal}
 .main-prt-two{background-image:url(../../../assets/images/index/main/02.jpg)}
 .bg-f3f3f3{background-color:#f3f3f3}
@@ -32,10 +33,10 @@ p{text-align:justify}
 @media screen and (max-width:900px){.how-num{font-size:100px}
 .how-text{padding:20px}
 }
-@media screen and (max-width:700px){.how-left,.how-right,.row,.row2{-webkit-box-orient:vertical}
+@media screen and (max-width:700px){.how-left,.how-right,.row{-webkit-box-orient:vertical;-webkit-box-direction:reverse}
+.how-left,.how-right,.row,.row2{-webkit-box-orient:vertical}
 .howWorking .container{padding:10px 20px}
 .how-text p{width:100%}
-.how-left,.how-right,.row{-webkit-box-direction:reverse}
 .col-50,.how-text{text-align:center}
 .how-left,.how-right{padding:0;display:-webkit-box;display:flex;flex-direction:column-reverse;-webkit-box-align:center;align-items:center}
 .how-num{font-size:60px;width:150px;height:150px;border-radius:50%;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center}

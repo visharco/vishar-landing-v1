@@ -1,4 +1,5 @@
 .menu-links a,.menu-links a:hover{-webkit-transition:all .2s linear;transition:all .2s linear}
+.menu-login,.menu-login-text{-webkit-transition:all .2s linear}
 .header{background-color:#fff;position:fixed;width:100%;box-shadow:0 3px 11px rgba(140,140,140,.23);height:80px;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;z-index:9999}
 .header .container{margin:auto;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center}
 .header-logo a,.headerMenuUp{display:-webkit-box;display:flex}
@@ -6,7 +7,6 @@
 .menu-links{display:-webkit-box;display:flex;font-weight:900;-webkit-box-align:center;align-items:center;margin-left:40px}
 .menu-links a{border:2px solid transparent;margin:0 5px;border-radius:30px;position:relative}
 .linkActive,.menu-links a:hover{border:2px solid #333}
-.menu-login,.menu-login-text{-webkit-transition:all .2s linear}
 .menu-link{margin:10px;padding:0 5px;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;cursor:pointer}
 .menu-login{padding:10px;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;cursor:pointer;transition:all .2s linear}
 .menu-login-text{background-color:#2D9CDB;border-radius:30px;width:200px;line-height:40px;color:#fff;text-align:center;font-weight:900;border:2px solid #419cdb;transition:all .2s linear}
@@ -17,12 +17,13 @@
 @media screen and (max-width:900px){.menu-link{margin:2px;padding:0 5px}
 .menu-login-text{width:100px}
 }
-@media screen and (max-width:700px){.headerMenuDown,.headerMenuUp,.menu-links{-webkit-box-orient:vertical;-webkit-box-direction:normal;width:100%}
+@media screen and (max-width:700px){.headerMenuDown,.headerMenuUp{-webkit-box-direction:reverse;-webkit-box-orient:vertical}
+.headerMenuDown,.headerMenuUp,.menu-links{-webkit-box-orient:vertical;width:100%}
 .header{position:relative}
 .headerMenuDown,.headerMenuUp{position:absolute;height:100vh;left:0;background-color:#c1c1c1;z-index:2}
 .headerMenuDown{top:0;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:-webkit-box;display:flex;-webkit-transition:all .4s cubic-bezier(0,.88,.19,1.095);transition:all .4s cubic-bezier(0,.88,.19,1.095);flex-direction:column-reverse}
 .headerMenuUp{-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;display:-webkit-box;display:flex;top:-1000px;-webkit-transition:all .4s cubic-bezier(0,.88,.19,1.095);transition:all .4s cubic-bezier(0,.88,.19,1.095);flex-direction:column-reverse}
-.menu-links{flex-direction:column;margin:0}
+.menu-links{-webkit-box-direction:normal;flex-direction:column;margin:0}
 .menu-links a{width:90%;padding:10px;margin:10px 0}
 .menu-link{margin:0;padding:0}
 .menu-login-text{width:90%;line-height:44px}
