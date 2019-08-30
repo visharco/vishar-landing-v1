@@ -51,7 +51,7 @@ class CategoriesComponent extends Component {
     //-------------------------------------------------------------------------------------------------------------------------------------------------
     _actionModal = (val,image, title, color , desc,price) => { 
         // console.log("keypresss")
-
+        
 
  
         this.setState({
@@ -124,12 +124,12 @@ class CategoriesComponent extends Component {
                               <div>
                                   <div className="close-button" onClick={() => this._actionModal('close')}></div>
                               <SeeMoreComponent 
-                              title={this.state.title}  
-                              desc={this.state.desc}  
-                              image={this.state.image}  
-                              color={this.state.color} 
-                              price={this.state.price} 
-                              bg={"b-" + this.state.color }
+                                title={this.state.title}  
+                                desc={this.state.desc}  
+                                image={this.state.image}  
+                                color={this.state.color} 
+                                price={this.state.price} 
+                                bg={"b-" + this.state.color }
                               />
                               </div>
                             </div>
