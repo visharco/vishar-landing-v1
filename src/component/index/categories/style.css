@@ -1,27 +1,184 @@
-.categories>.container-fluid>.container{margin:auto;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;padding:100px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}
-.cat-part1{display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center}
-.cat-part1-text{padding:10px;text-align:right}
-.cat-part1-text h1{font-size:24px;font-weight:500;padding-bottom:10px;color:#222}
-.cat-part1-text h2{font-size:20px;font-weight:100;color:#444;width:600px;float:right;text-align:justify;direction:rtl}
-.show-my-category{cursor:pointer;width:400px;margin:5px}
-.cat-part1-action p{background-color:#2D9CDB;border-radius:5px;width:240px;height:45px;line-height:45px;color:#fff;text-align:center;font-weight:500;font-size:15px;cursor:pointer;-webkit-transition:all .2s linear;transition:all .2s linear}
-.cat-part1-action p:hover{opacity:.8;-webkit-transition:all .2s linear;transition:all .2s linear}
-.cat-slider{padding:50px 0}
-.category-slider{background-position:center;background-repeat:no-repeat;width:300px;height:300px;cursor:-webkit-zoom-in;cursor:zoom-in;margin:auto;position:relative;background-color:#aeaeae;background-size:cover;border-radius:5px}
-.cat-label{position:absolute;right:20px;bottom:20px;background-color:#fffe3;padding:5px 10px;border-radius:30px;min-width:120px;color:#616161;text-align:center;font-size:13px;opacity:1;-webkit-transition:all .2s linear;transition:all .2s linear}
-.category-slider:hover .cat-label{opacity:0;-webkit-transition:all .2s linear;transition:all .2s linear}
-.slick-slider .slick-list,.slick-slider .slick-track{padding:0 0 30px}
-.slick-dots li button:before{font-size:20px;color:#a5a5a5}
-.categories .slick-prev:before,.slick-next:before{color:rgba(59,59,59,.2);font-size:25px;-webkit-transition:all .1s linear;transition:all .1s linear}
-.categories .slick-prev:before,.slick-next:before:hover{color:rgba(59,59,59,.8);-webkit-transition:all .1s linear;transition:all .1s linear}
-@media screen and (max-width:1100px){.category-slider{width:200px;height:140px}
-.slick-slider .slick-list,.slick-slider .slick-track{padding:0 0 30px}
+.categories>.container-fluid>.container {
+    margin: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column
 }
-@media screen and (max-width:900px){.slick-dots{display:none!important}
+
+.cat-part1 {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center
 }
-@media screen and (max-width:700px){.category-slider{width:300px;height:200px}
-.categories>.container-fluid>.container{padding:50px}
-.cat-part1-text{text-align:center}
+
+.cat-part1-text {
+    padding: 10px;
+    text-align: right
 }
-@media screen and (max-width:450px){.category-slider{width:200px;height:140px}
+
+.cat-part1-text h1 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #222
+}
+
+.cat-part1-text h2 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #444;
+    width: 600px;
+    float: right;
+    text-align: justify;
+    direction: rtl
+}
+
+.show-my-category {
+    cursor: pointer !important;
+    width: 400px;
+    margin: 5px
+}
+
+.cat-part1-action p {
+    background-color: #2D9CDB;
+    border-radius: 5px;
+    width: 240px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.cat-part1-action p:hover {
+    opacity: .8;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.cat-slider {
+    padding: 50px 0
+}
+
+.category-slider {
+    cursor: pointer !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    background-color: #aeaeae;
+    background-size: cover;
+    border-radius: 5px
+}
+.show-my-category * {
+    cursor: pointer!important;
+}
+
+.cat-label {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ffffe3;
+    padding: 5px 10px;
+    border-radius: 30px;
+    min-width: 120px;
+    color: #616161;
+    text-align: center;
+    font-size: 13px;
+    opacity: 1;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.category-slider:hover .cat-label {
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer!important;
+
+
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+    padding: 0 0 30px
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+    color: #a5a5a5
+}
+
+.categories .slick-prev:before,
+.slick-next:before {
+    color: rgba(59, 59, 59, .2);
+    font-size: 25px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear
+}
+
+.categories .slick-prev:before,
+.slick-next:before:hover {
+    color: rgba(59, 59, 59, .8);
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    cursor: pointer!important;
+
+}
+
+@media screen and (max-width:1100px) {
+    .category-slider {
+        width: 200px;
+        height: 140px
+    }
+
+    .slick-slider .slick-list,
+    .slick-slider .slick-track {
+        padding: 0 0 30px
+    }
+}
+
+@media screen and (max-width:900px) {
+    .slick-dots {
+        display: none !important
+    }
+}
+
+@media screen and (max-width:700px) {
+    .category-slider {
+        width: 300px;
+        height: 200px
+    }
+
+    .categories>.container-fluid>.container {
+        padding: 50px
+    }
+
+    .cat-part1-text {
+        text-align: center
+    }
+}
+
+@media screen and (max-width:450px) {
+    .category-slider {
+        width: 200px;
+        height: 140px
+    }
 }

@@ -3,6 +3,7 @@ import {Link, browserHistory } from 'react-router'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SeeMoreComponent from '../../../component/category/seeMore/seeMoreComponent'; 
 
 import slide1 from './../../../assets/images/slide1.png'
 import slide2 from './../../../assets/images/slide2.png'
@@ -11,6 +12,7 @@ import GetToAPI from '../../../controler/getToApi';
 
 
 import './style.css';
+import priceDigit from '../../priceDigit/priceDigit';
 
 
 
@@ -36,6 +38,69 @@ class Categories extends Component {
         })
     }
 
+
+    getclose = (event) => { 
+        if(event.keyCode === 27) {
+           this._actionModal("close")
+        }
+
+    }
+    componentDidMount(){
+        document.addEventListener("keydown", this.getclose, false);
+    }
+
+    componentWillUnmount(){
+        document.removeEventListener("keydown", this.getclose, false);
+    }
+
+
+    Modal = React.createRef();
+
+
+    _actionModal = (data,val) => {
+       
+        console.log(data);
+
+        this.setState({
+            title:data.title,
+            image:data.background,
+            color:data.color,
+            desc: data.desc,
+            price: priceDigit(data.price,'price'),
+        });
+ 
+
+        if(val === 'open'){
+            // document.getElementById('dialog').classList.add('show')
+            // const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+
+            const body = document.body;
+            body.style.height = '100vh';
+            body.style.overflowY = 'hidden';
+
+            this.Modal.current.style.display = 'block';
+        }
+        else if (val === 'close'){
+
+            const body = document.body;
+            // const scrollY = body.style.top;
+            body.style.position = '';
+            body.style.top = '';
+            body.style.height = '';
+            body.style.overflowY = '';
+            // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            // document.getElementById('dialog').classList.remove('show');
+
+            this.Modal.current.style.display = 'none';
+        }
+
+
+
+
+
+        
+
+    }
 
 
     render() {
@@ -71,7 +136,7 @@ class Categories extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data,index) => {
-                    return   <div key={index} className="show-my-category" onClick={()=> browserHistory.push('/categories')}>
+                    return   <div key={index} className="show-my-category" onClick={() =>  this._actionModal(data,'open')}>
                                 <div className="category-slider" style={{ backgroundImage: 'url(' + data.image + ')' }} >
                                     <p className="cat-label" >{data.title}</p>
                                 </div>
@@ -104,6 +169,23 @@ class Categories extends Component {
                                 </Slider>
                             </div>
                         </div>
+
+                        <div  ref={this.Modal} className="modal-fff" >
+                              <div>
+                                  <div className="close-button" onClick={() => this._actionModal([],'close')}></div>
+                              <SeeMoreComponent 
+                                title={this.state.title}  
+                                desc={this.state.desc}  
+                                image={this.state.image}  
+                                color={this.state.color} 
+                                price={this.state.price} 
+                                bg={"b-" + this.state.color }
+                              />
+                              </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>

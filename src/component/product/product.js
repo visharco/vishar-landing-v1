@@ -51,24 +51,6 @@ class Product extends Component {
                     <div className="product-text" >
                         {this.props.data.desc}
                     </div>
-                    {/* <div className="product-options" >
-                        <div className="product-option">
-                            <p>طراحی لوگو</p>
-                            <img src={tik} alt="تیک" />
-                        </div>
-                        <div className="product-option">
-                            <p>کارت تجاری</p>
-                            <img src={tik} alt="تیک" />
-                        </div>
-                        <div className="product-option">
-                            <p>سازماندهی</p>
-                            <img src={tik} alt="تیک" />
-                        </div>
-                        <div className="product-option">
-                            <p>طرح اولیه</p>
-                            <img src={tik} alt="تیک" />
-                        </div>
-                    </div> */}
                 </div>
             </div>
 
