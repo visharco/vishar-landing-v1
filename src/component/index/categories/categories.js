@@ -110,7 +110,7 @@ class Categories extends Component {
             autoplay: true,
             speed: 500,
             autoplaySpeed: 2500,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,  
             responsive: [
                 {
@@ -149,7 +149,7 @@ class Categories extends Component {
         return (
             <div className="categories" >
                 <div className="container-fluid">
-                    <div className="container">
+                    <div className="container-x">
                         <div className="cat-part1" >
                         <Link to="/categories" className="cat-part1-action" >
                             <p>نمایش همه  ی دسته بندیهای  </p>

@@ -126,6 +126,10 @@
     color: #a5a5a5
 }
 
+.container-x {
+    width: 100%;
+    padding: 20px;
+}
 .categories .slick-prev:before,
 .slick-next:before {
     color: rgba(59, 59, 59, .2);
