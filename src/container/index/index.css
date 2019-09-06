@@ -1,1 +1,34 @@
-body{background-color:#fff;color:#333}
+body {
+    background-color: #fff;
+    color: #333
+}
+
+
+.modal-333 {
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0,0.70);
+    z-index: 999999;
+    text-align: center;
+    display: none
+}
+
+.img-index-popup {
+    width: 600px;
+    height: 300px;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 150px;
+    background-image: url('../../assets/images/design1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #ffffff;
+}
