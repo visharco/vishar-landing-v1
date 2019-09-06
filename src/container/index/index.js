@@ -6,7 +6,7 @@ import HowWorking from '../../component/index/howWorking/howWorking';
 import OurService from '../../component/index/ourService/ourService';
 import SampleDesigns from '../../component/index/sampleDesigns/sampleDesigns';
 import CustomerComment from '../../component/index/customerComment/customerComment';
-import './style.css'
+import './index.css'
 
 
 
@@ -59,13 +59,11 @@ class IndexComponent extends Component {
         return ( 
             <div>
 
-
-                        <div  ref={this.Modal} className="modal-333" >
-                              <div>
-                                  <div className="close-button" onClick={() => this._actionModal([],'close')}></div>
-                             
-                              </div>
+                <div  ref={this.Modal} className="modal-333" >
+                        <div>
+                            <div className="close-button" onClick={() => this._actionModal([],'close')}></div>
                         </div>
+                </div>
 
                 <GetStarted />
                 <Categories />
