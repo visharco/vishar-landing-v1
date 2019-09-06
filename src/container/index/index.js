@@ -18,6 +18,8 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div>
+
+                
                 <GetStarted />
                 <Categories />
                 <HowWorking />
