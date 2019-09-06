@@ -61,7 +61,7 @@ class IndexComponent extends Component {
 
                 <div  ref={this.Modal} className="modal-333" >
                         <div>
-                            <div className="close-button" onClick={() => this._actionModal([],'close')}></div>
+                            <div className="close-button" onClick={() => this._actionModal('close')}></div>
                             <div className="img-index-popup">
 
                             </div>
