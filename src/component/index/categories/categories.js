@@ -106,8 +106,8 @@ class Categories extends Component {
     render() {
         const settings = {
             dots: false,
-            infinite: true,
-            autoplay: true,
+            infinite: false,
+            autoplay: false,
             speed: 500,
             autoplaySpeed: 2500,
             slidesToShow: 4,
