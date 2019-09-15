@@ -174,10 +174,16 @@ class FooterComponent extends Component {
 
             <div className="under-footer ">
                 <div className="container row">
-                    <div className="col-50">
+                    <div className="col-50 d-f">
                         <div className="enamad"   > 
                             <div className="e-namad-container" dangerouslySetInnerHTML={ this.iframe() } />
                         </div>
+                        <a href="http://mazandaran.irannsr.org/" target="_blanck" >
+                            <div className="enamad"   > 
+                                <div className="senf-iran"></div>
+                            </div>
+                        </a>
+
                   
                     </div>
                     <div className="col-50 footer-text">

@@ -110,7 +110,7 @@ class Categories extends Component {
             autoplay: true,
             speed: 500,
             autoplaySpeed: 2500,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,  
             responsive: [
                 {
