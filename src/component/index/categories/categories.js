@@ -136,9 +136,18 @@ class Categories extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data,index) => {
+                console.log(data)
                     return   <div key={index} className="show-my-category" onClick={() =>  this._actionModal(data,'open')}>
                                 <div className="category-slider" style={{ backgroundImage: 'url(' + data.image + ')' }} >
-                                    <p className="cat-label" >{data.title}</p>
+                                    <div  className={'cat-label b-'+data.color} >
+                                        <div className="cat-icon" style={{backgroundImage:'url(' + data.icon + ')'}}></div>
+                                        <h1>{data.title}</h1>
+                                        <p>{data.desc}</p>
+                                        <div className="cat--see-more">
+                                            <p>نمایش بیشتر</p>
+                                            <i class="fa fa-arrow-left"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
             }) : ''
