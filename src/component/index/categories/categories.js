@@ -10,16 +10,8 @@ import slide2 from './../../../assets/images/slide2.png'
 import slide3 from './../../../assets/images/slide3.png'
 import GetToAPI from '../../../controler/getToApi';
 
-
 import './style.css';
 import priceDigit from '../../priceDigit/priceDigit';
-
-
-
-
- 
-
-
 
 
 class Categories extends Component {
@@ -59,8 +51,6 @@ class Categories extends Component {
 
     _actionModal = (data,val) => {
        
-        console.log(data);
-
         this.setState({
             title:data.title,
             image:data.background,
@@ -124,7 +114,6 @@ class Categories extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data,index) => {
-                console.log(data)
                     return   <div key={index} className="show-my-category" onClick={() =>  this._actionModal(data,'open')}>
                                 <div className="category-slider" style={{ backgroundImage: 'url(' + data.image + ')' }} >
                                     <div  className={'cat-label b-'+data.color} >
