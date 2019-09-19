@@ -106,8 +106,8 @@ class Categories extends Component {
     render() {
         const settings = {
             dots: false,
-            infinite: true,
-            autoplay: true,
+            infinite: false,
+            autoplay: false,
             speed: 500,
             autoplaySpeed: 2500,
             slidesToShow: 4,
@@ -136,9 +136,15 @@ class Categories extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data,index) => {
+                console.log(data)
                     return   <div key={index} className="show-my-category" onClick={() =>  this._actionModal(data,'open')}>
                                 <div className="category-slider" style={{ backgroundImage: 'url(' + data.image + ')' }} >
-                                    <p className="cat-label" >{data.title}</p>
+                                    <div className="cat-label" >
+                                        <div className="cat-icon" style={{backgroundImage:'url(' + data.icon + ')'}}></div>
+                                        <h1>{data.title}</h1>
+                                        <p>{data.desc}</p>
+                                        <h3 className="cat--see-more">نمایش بیشتر</h3>
+                                    </div>
                                 </div>
                             </div>
             }) : ''
