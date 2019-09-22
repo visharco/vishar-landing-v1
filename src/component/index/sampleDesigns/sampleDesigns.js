@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img01 from './../../../assets/images/work-sample/01.jpg'
-import img02 from './../../../assets/images/work-sample/02.jpg'
-import img03 from './../../../assets/images/work-sample/03.jpg'
-import img04 from './../../../assets/images/work-sample/04.jpg'
-import img05 from './../../../assets/images/work-sample/05.jpg'
-import img06 from './../../../assets/images/work-sample/06.jpg'
+import img01 from './../../../assets/images/work-sample/01.jpg';
+import img02 from './../../../assets/images/work-sample/02.jpg';
+import img03 from './../../../assets/images/work-sample/03.jpg';
+import img04 from './../../../assets/images/work-sample/04.jpg';
+import img05 from './../../../assets/images/work-sample/05.jpg';
+import img06 from './../../../assets/images/work-sample/06.jpg';
 
 
 import brandImg01 from './../../../assets/images/brand/01.png'
@@ -155,8 +155,6 @@ class SampleDesigns extends Component {
                                         </div>
 
                                     </div>
-
-
                                 </Slider>
                             </div>
                         </div>
@@ -172,7 +170,6 @@ class SampleDesigns extends Component {
                                         <div className="sampleDesigns-slider brand"
                                              style={{backgroundImage: 'url(' + brandImg01 + ')'}}>
                                         </div>
-
                                     </div>
 
                                     <div>
