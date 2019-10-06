@@ -16,7 +16,7 @@ class IndexComponent extends Component {
     }
 
     componentDidMount() {
-    //   this._actionModal('open');  // TODO: to lunch popup after get image
+      this._actionModal('open');  // TODO: to lunch popup after get image
     }
 
 
@@ -45,10 +45,10 @@ class IndexComponent extends Component {
             <div>
 
                 <div  ref={this.Modal} className="modal-333" >
-                        <div>
                             <div className="close-button" onClick={() => this._actionModal('close')}></div>
+                        <a href="http://koodakii.vishar.com/" target="_blank">
                             <div className="img-index-popup"></div>
-                        </div>
+                        </a>
                 </div>
 
                 <GetStarted />

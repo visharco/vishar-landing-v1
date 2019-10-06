@@ -13,20 +13,20 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0,0.70);
+    background-color: rgba(0, 0, 0,0.80);
     z-index: 999999;
     text-align: center;
     display: none
 }
 
 .img-index-popup {
-    width: 600px;
-    height: 300px;
+    width: 650px;
+    height: 400px;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
     margin-top: 150px;
-    background-image: url('../../assets/images/design1.png');
+    background-image: url('../../assets/images/koodakii.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
