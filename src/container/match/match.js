@@ -12,7 +12,16 @@ class MatchComponent extends Component {
     render() { 
         const mathcs = (
              <div className="match-container">
-                 <h1>sdsdsdsd</h1>
+                <div className="btn-match">
+                    <p>اطلاعات بیشتر</p>
+                </div>
+                <div className="txt-match">
+                    <h2>فراخوان شرکت در مسابقه کودکی</h2>
+                    <p>مسابقه بزرگ طراحی لوگو و کاراکتر برای استارت آپ با موضوع روانشناسی کودک بین تمام طراحان کشور</p>
+                </div>
+                <div className="img-match">
+                    
+                </div>
             </div>
         )
         return ( 
