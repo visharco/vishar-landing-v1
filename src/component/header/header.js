@@ -78,6 +78,7 @@ class HeaderComponent extends Component {
                                     <a href="http://www.blog.vishar.com"  ><li className="menu-link">بلاگ</li></a>
                                     <Link onClick={this.openHumberger} to="/aboutUs" ><li className="menu-link">درباره ما</li></Link>
                                     <Link onClick={this.openHumberger} to="/projects" ><li className="menu-link">پروژه ها</li></Link>
+                                    <Link onClick={this.openHumberger} to="/match" ><li className="menu-link">مسابقات</li></Link>
                                     <Link onClick={this.openHumberger} to="/designers" ><li className="menu-link">طراحان</li></Link>
                                     <Link onClick={this.openHumberger} to="/categories" ><li className="menu-link">دسته بندی</li></Link>
                                 </ul>
