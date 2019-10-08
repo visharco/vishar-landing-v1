@@ -12,6 +12,7 @@ import PolicyScreen from './container/policy/policyComponent';
 import ContactUsScreen from './container/contactUs/contactUs';
 import ProfileScreen from './container/profile/profile';
 import DesignerDesignScreen from './container/designerDesign/designerDesign';
+import MatchComponent from './container/match/match';
 
 
 
@@ -30,6 +31,7 @@ class RouterComponent extends Component {
                     <Route   path="categories" component={CategorieScreen} /> 
                     <Route   path="designers" component={DesignersScreen} /> 
                     <Route   path="projects" component={ProjectsScreen} /> 
+                    <Route   path="match" component={MatchComponent} /> 
                     <Route   path="aboutUs" component={AboutUsScreen} /> 
                     <Route   path="policy" component={PolicyScreen} /> 
                     <Route   path="contactUs" component={ContactUsScreen} /> 
