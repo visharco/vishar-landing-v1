@@ -11,7 +11,7 @@ class MatchComponent extends Component {
     }
     render() { 
         const mathcs = (
-             <div className="match-container">
+             <a href="http://koodakii.vishar.com" target="_blanck" className="match-container">
                 <div className="btn-match">
                     <p>اطلاعات بیشتر</p>
                 </div>
@@ -22,7 +22,7 @@ class MatchComponent extends Component {
                 <div className="img-match">
                     
                 </div>
-            </div>
+            </a>
         )
         return ( 
             <div className="projects" >
@@ -43,9 +43,7 @@ class MatchComponent extends Component {
                         <div className="container" >
                             
                                {mathcs}
-                               {mathcs}
-                               {mathcs}
-                               {mathcs}
+                               
                         </div>
                     </div>
                 </div>
