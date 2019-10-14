@@ -21,7 +21,7 @@ body {
 
 .img-index-popup {
     width: 650px;
-    height: 400px;
+    height: 470px;
     background-color: #fcfcfc;
     border-radius: 5px;
     margin: auto;
@@ -29,6 +29,6 @@ body {
     background-image: url('../../assets/images/koodakii.gif');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border: 2px solid #ffffff;
 }
