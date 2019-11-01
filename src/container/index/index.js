@@ -48,7 +48,7 @@ class IndexComponent extends Component {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>My aras </title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <link rel="canonical" href="http://vishar.com/example" />
             </Helmet>
 
 

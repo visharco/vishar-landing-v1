@@ -8,7 +8,6 @@ import PostToApi from "../../controler/postToApi";
 import {browserHistory} from "react-router";
 import '../../../node_modules/sweetalert/dist/sweetalert.css'
 import {Helmet} from "react-helmet";
-import {Helmet} from "react-helmet";
 
 class ContactUs extends Component {
     constructor(props) {
@@ -63,7 +62,7 @@ class ContactUs extends Component {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>My aras </title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <link rel="canonical" href="http://vishar.com/example" />
             </Helmet>
 
 
