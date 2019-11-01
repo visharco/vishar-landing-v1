@@ -44,6 +44,13 @@ class IndexComponent extends Component {
         return ( 
             <div>
 
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>My aras </title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+
+
                 <div  ref={this.Modal} className="modal-333" >
                             <div className="close-button" onClick={() => this._actionModal('close')}></div>
                         <a href="http://koodakii.vishar.com/" target="_blank">

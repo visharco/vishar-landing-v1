@@ -98,6 +98,11 @@ class CategoriesComponent extends Component {
         return (
 
             <div className="categories">
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>My aras </title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
                 <div className="C-title">
                     <div className="container-fluid">
                         <div className="container">

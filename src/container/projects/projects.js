@@ -68,6 +68,11 @@ class ProjectsComponent extends Component {
         )
         return (
             <div className="projects" >
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>My aras </title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >

@@ -103,7 +103,11 @@ class Profile extends Component {
 
         return (
             <div className="Profile" >
-
+         <Helmet>
+                <meta charSet="utf-8" />
+                <title>My aras </title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
                 <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >

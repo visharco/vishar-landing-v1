@@ -55,6 +55,11 @@ class DesignersComponent extends Component {
         return (
             <div className="designers" >
 
+<Helmet>
+                <meta charSet="utf-8" />
+                <title>My aras </title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
                 <div className="designers-title" >
                     <div className="container-fluid">
                         <div className="container" >
