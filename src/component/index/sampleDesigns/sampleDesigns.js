@@ -83,7 +83,7 @@ class SampleDesigns extends Component {
             autoplay: true,
             speed: 500,
             autoplaySpeed: 500,
-            slidesToShow: 7,
+            slidesToShow: 6,
             slidesToScroll: 1,
             responsive: [
                 {

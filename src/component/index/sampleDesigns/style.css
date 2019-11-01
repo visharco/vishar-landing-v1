@@ -6,7 +6,12 @@
 .sampleDesigns .slick-prev:before,.slick-next:before:hover{color:rgba(59,59,59,.8);-webkit-transition:all .1s linear;transition:all .1s linear}
 .sampleDesigns-slider{background-position:center;background-size:cover;background-repeat:no-repeat;width:300px;height:300px;cursor:-webkit-zoom-in;cursor:zoom-in;margin:auto;position:relative}
 .bg-fff{background-color:#fff!important}
-.brand{width:150px;height:150px;-webkit-filter:grayscale(200%);filter:grayscale(-105%);-webkit-transition:all .2s linear;transition:all .2s linear;opacity:.4}
+.brand{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.10);
+    margin: 40px 0;
+    width:150px;height:150px;-webkit-filter:grayscale(200%);filter:grayscale(-105%);-webkit-transition:all .2s linear;transition:all .2s linear;opacity:.4
+}
 .brand:hover{-webkit-filter:grayscale(0);filter:grayscale(0);opacity:1;border-radius:5px}
 @media screen and (max-width:900px){.sampleDesigns-slider{width:200px;height:200px}
 }
