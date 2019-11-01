@@ -13,7 +13,7 @@ import ContactUsScreen from './container/contactUs/contactUs';
 import ProfileScreen from './container/profile/profile';
 import DesignerDesignScreen from './container/designerDesign/designerDesign';
 import MatchComponent from './container/match/match';
-
+import NotFoundScreen from './container/notFound/notFoundComponent';
 
 
 class RouterComponent extends Component {
@@ -37,6 +37,7 @@ class RouterComponent extends Component {
                     <Route   path="contactUs" component={ContactUsScreen} /> 
                     <Route   path="/profile/:id" component={ProfileScreen} /> 
                     <Route   path="designs/:id" component={DesignerDesignScreen} /> 
+                    <Route   path="/404" component={NotFoundScreen} />
                 </Route>
             </Router>
          );
