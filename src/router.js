@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import { Router ,  Route , browserHistory , IndexRoute  } from 'react-router';
+import { Router ,  Route , browserHistory , IndexRoute , Redirect } from 'react-router';
 
 
 import RootComponent from './root';
@@ -37,7 +37,7 @@ class RouterComponent extends Component {
                     <Route   path="contactUs" component={ContactUsScreen} /> 
                     <Route   path="/profile/:id" component={ProfileScreen} /> 
                     <Route   path="designs/:id" component={DesignerDesignScreen} /> 
-                    <Route   path="/404" component={NotFoundScreen} />
+                    <Route path='*' exact={true} component={NotFoundScreen} />
                 </Route>
             </Router>
          );
