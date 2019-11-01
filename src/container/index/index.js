@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Helmet} from "react-helmet";
 
 import Categories from '../../component/index/categories/categories'
 import GetStarted from '../../component/index/getStarted/getStarted'
@@ -43,6 +44,13 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div>
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>طراحی آنلاین سریع و باکیفیت پروژه های گرافیکی | ویشار</title>
+                <link rel="canonical" href="http://vishar.com" />
+            </Helmet>
+
 
                 <div  ref={this.Modal} className="modal-333" >
                             <div className="close-button" onClick={() => this._actionModal('close')}></div>

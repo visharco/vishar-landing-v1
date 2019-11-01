@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import rocket from '../../assets/images/rocket.svg'
+import {Helmet} from "react-helmet";
 
 
 
@@ -26,6 +27,11 @@ class MatchComponent extends Component {
         )
         return ( 
             <div className="projects" >
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>مسابقات | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/match" />
+            </Helmet>
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >

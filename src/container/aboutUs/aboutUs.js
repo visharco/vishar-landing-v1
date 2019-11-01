@@ -5,6 +5,7 @@ import { Player } from 'video-react';
 
 
 import video1 from '../../assets/videos/video1.mp4';
+import {Helmet} from "react-helmet";
 
 import './style.css';
 import img01 from '../../assets/images/team/1.jpg';
@@ -44,6 +45,11 @@ class AboutUsComponent extends Component {
         )
         return (
             <div className="aboutUs">
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>درباره ما | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/aboutUs" />
+            </Helmet>
                 <div className="aboutUsTextImg" >
                     <div className="container-fluid">
                         <div className="container">

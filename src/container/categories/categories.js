@@ -4,6 +4,7 @@ import categorytitle from '../../assets/images/categorytitle.svg'
 import search from '../../assets/icons/search.svg'
 
 import Product from '../../component/product/product'
+import {Helmet} from "react-helmet";
 
 import './style.css';
 import GetApi from '../../controler/getToApi';
@@ -98,6 +99,11 @@ class CategoriesComponent extends Component {
         return (
 
             <div className="categories">
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>دسته بندی ها | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/categories" />
+            </Helmet>
                 <div className="C-title">
                     <div className="container-fluid">
                         <div className="container">

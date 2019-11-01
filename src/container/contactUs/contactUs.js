@@ -7,6 +7,7 @@ import './style.css';
 import PostToApi from "../../controler/postToApi";
 import {browserHistory} from "react-router";
 import '../../../node_modules/sweetalert/dist/sweetalert.css'
+import {Helmet} from "react-helmet";
 
 class ContactUs extends Component {
     constructor(props) {
@@ -57,6 +58,14 @@ class ContactUs extends Component {
     render() {
         return (
             <div className="contactUs">
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>تماس باما | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/contactUs" />
+            </Helmet>
+
+
                 <SweetAlert
                     show={this.state.show}
                     title="اعلان"

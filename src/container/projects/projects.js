@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import rocket from '../../assets/images/rocket.svg'
+import {Helmet} from "react-helmet";
 
 import Project from '../../component/project/project';
 import GetToApi from '../../controler/getToApi';
@@ -68,6 +69,11 @@ class ProjectsComponent extends Component {
         )
         return (
             <div className="projects" >
+                         <Helmet>
+                <meta charSet="utf-8" />
+                <title>لیست پروژه ها | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/projects" />
+            </Helmet>
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >

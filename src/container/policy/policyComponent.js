@@ -1,5 +1,6 @@
  import React, { Component } from 'react';
  import './style.css';
+ import {Helmet} from "react-helmet";
 
 
 
@@ -11,6 +12,11 @@
      render() { 
          return ( 
              <div className=" ">
+                          <Helmet>
+                <meta charSet="utf-8" />
+                <title>قوانین و مقررات | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/policy" />
+            </Helmet>
                     <div className="container-fluid">
                         <div className="container">
                             <div className="policy">

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SeeMoreComponent from '../../../component/category/seeMore/seeMoreComponent'; 
+import {Helmet} from "react-helmet";
 
 import slide1 from './../../../assets/images/slide1.png'
 import slide2 from './../../../assets/images/slide2.png'
@@ -134,6 +135,10 @@ class Categories extends Component {
 
         return (
             <div className="categories" >
+
+      
+
+
                 <div className="container-fluid">
                     <div className="container-x">
                         <div className="cat-part1" >

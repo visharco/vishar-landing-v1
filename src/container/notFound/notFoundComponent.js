@@ -1,5 +1,6 @@
 import React , {Component } from 'react';
 import './style.css';
+import {Helmet} from "react-helmet";
 
 class NotFound extends Component {
 
@@ -12,6 +13,11 @@ class NotFound extends Component {
      
         return (
             <div className="aboutUs">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>طراحی آنلاین سریع و باکیفیت پروژه های گرافیکی | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com/404" />
+                </Helmet>
             <div className="aboutUsTextImg" >
                 <div className="container-fluid">
                     <div className="container">

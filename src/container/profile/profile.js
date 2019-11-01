@@ -9,6 +9,7 @@ import DesignerLogo from '../../component/designerLogo/designerLogo';
 import Appreciation from '../../component/appreciation/appreciation';
 import GetToApi from '../../controler/getToApi';
 import loadingImage from '../../assets/images/loading-image.gif';
+import {Helmet} from "react-helmet";
 
 
 import './style.css';
@@ -103,7 +104,11 @@ class Profile extends Component {
 
         return (
             <div className="Profile" >
-
+         <Helmet>
+                <meta charSet="utf-8" />
+                <title>پروفایل | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/profile" />
+            </Helmet>
                 <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >

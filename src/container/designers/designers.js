@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 import DesignerResult from '../../component/designerResult/designerResult';
+import {Helmet} from "react-helmet";
 
 import designerPic from './../../assets/images/pic1.png'
 import search from './../../assets/icons/search.svg'
@@ -55,6 +56,11 @@ class DesignersComponent extends Component {
         return (
             <div className="designers" >
 
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>طراحان ما | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com/designers" />
+                </Helmet>
                 <div className="designers-title" >
                     <div className="container-fluid">
                         <div className="container" >
