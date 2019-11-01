@@ -26,7 +26,7 @@ class GetStarted extends Component {
                         <div className="get-title">
                             <div className="get-title-box"  data-aos="fade-up"  >
                                 <div className="get-title-up "  > 
-                                    <h2> ویشار، طراحان همیشه بیدار</h2>
+                                    <h1 className="slogan"> ویشار، طراحان همیشه بیدار</h1>
                                 </div>
                                 <h2 dir="rtl" className="get-title-down" >
                                 ویشار بستریست که طراحان مجرب سراسر کشور را به مشتریان و کارفرمایان متصل می کند. درک دقیق نیاز سفارش دهنده، کیفیت، تنوع طرح ها و سرعت تحویل پروژه از ویژگی های بارز ویشار می باشد.
