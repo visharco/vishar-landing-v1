@@ -15,8 +15,8 @@ class NotFound extends Component {
             <div className="aboutUs">
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>My aras </title>
-                    <link rel="canonical" href="http://vishar.com/example" />
+                    <title>طراحی آنلاین سریع و باکیفیت پروژه های گرافیکی | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com/404" />
                 </Helmet>
             <div className="aboutUsTextImg" >
                 <div className="container-fluid">

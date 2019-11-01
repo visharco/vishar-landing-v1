@@ -29,8 +29,8 @@ class MatchComponent extends Component {
             <div className="projects" >
                          <Helmet>
                 <meta charSet="utf-8" />
-                <title>My aras </title>
-                <link rel="canonical" href="http://vishar.com/example" />
+                <title>مسابقات | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/match" />
             </Helmet>
                 <div className="P-title" >
                     <div className="container-fluid">

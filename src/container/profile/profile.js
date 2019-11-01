@@ -106,8 +106,8 @@ class Profile extends Component {
             <div className="Profile" >
          <Helmet>
                 <meta charSet="utf-8" />
-                <title>My aras </title>
-                <link rel="canonical" href="http://vishar.com/example" />
+                <title>پروفایل | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/profile" />
             </Helmet>
                 <div className="Profile-title" >
                     <div className="container-fluid">

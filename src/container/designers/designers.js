@@ -56,11 +56,11 @@ class DesignersComponent extends Component {
         return (
             <div className="designers" >
 
-<Helmet>
-                <meta charSet="utf-8" />
-                <title>My aras </title>
-                <link rel="canonical" href="http://vishar.com/example" />
-            </Helmet>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>طراحان ما | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com/designers" />
+                </Helmet>
                 <div className="designers-title" >
                     <div className="container-fluid">
                         <div className="container" >

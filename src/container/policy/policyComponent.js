@@ -14,8 +14,8 @@
              <div className=" ">
                           <Helmet>
                 <meta charSet="utf-8" />
-                <title>My aras </title>
-                <link rel="canonical" href="http://vishar.com/example" />
+                <title>قوانین و مقررات | ویشار</title>
+                <link rel="canonical" href="http://vishar.com/policy" />
             </Helmet>
                     <div className="container-fluid">
                         <div className="container">
