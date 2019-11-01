@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 import DesignerResult from '../../component/designerResult/designerResult';
+import {Helmet} from "react-helmet";
 
 import designerPic from './../../assets/images/pic1.png'
 import search from './../../assets/icons/search.svg'

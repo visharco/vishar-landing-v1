@@ -5,6 +5,7 @@ import { Player } from 'video-react';
 
 
 import video1 from '../../assets/videos/video1.mp4';
+import {Helmet} from "react-helmet";
 
 import './style.css';
 import img01 from '../../assets/images/team/1.jpg';

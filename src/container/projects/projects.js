@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import rocket from '../../assets/images/rocket.svg'
+import {Helmet} from "react-helmet";
 
 import Project from '../../component/project/project';
 import GetToApi from '../../controler/getToApi';

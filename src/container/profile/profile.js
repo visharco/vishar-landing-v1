@@ -9,6 +9,7 @@ import DesignerLogo from '../../component/designerLogo/designerLogo';
 import Appreciation from '../../component/appreciation/appreciation';
 import GetToApi from '../../controler/getToApi';
 import loadingImage from '../../assets/images/loading-image.gif';
+import {Helmet} from "react-helmet";
 
 
 import './style.css';

@@ -8,6 +8,7 @@ import PostToApi from "../../controler/postToApi";
 import {browserHistory} from "react-router";
 import '../../../node_modules/sweetalert/dist/sweetalert.css'
 import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet";
 
 class ContactUs extends Component {
     constructor(props) {

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 import biggerlogo1 from './../../assets/images/biggerlogo1.png'
+import {Helmet} from "react-helmet";
 
 import DesignerLogoTitle from '../../component/designerLogoTitle/designerLogoTitle';
 import DesignerLogoPostComment from '../../component/designerLogoPostComment/designerLogoPostComment.js';
@@ -101,7 +102,7 @@ class DesignerDesign extends Component {
                 <title>My aras </title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            
+
                 <div className="DD-title" >
                     <div className="container-fluid">
                         <div className="container" >

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import rocket from '../../assets/images/rocket.svg'
+import {Helmet} from "react-helmet";
 
 
 

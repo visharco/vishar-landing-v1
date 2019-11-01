@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Helmet} from "react-helmet";
 
 import Categories from '../../component/index/categories/categories'
 import GetStarted from '../../component/index/getStarted/getStarted'

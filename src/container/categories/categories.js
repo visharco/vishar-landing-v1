@@ -4,6 +4,7 @@ import categorytitle from '../../assets/images/categorytitle.svg'
 import search from '../../assets/icons/search.svg'
 
 import Product from '../../component/product/product'
+import {Helmet} from "react-helmet";
 
 import './style.css';
 import GetApi from '../../controler/getToApi';
