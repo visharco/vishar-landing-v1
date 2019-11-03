@@ -35,6 +35,21 @@ class ProjectsComponent extends Component {
       
     }
 
+    //
+    //------------------------------------------->
+    fetchData = async(key) => {
+        const res = await GetToApi('site/projects?type=' + key); 
+              // console.log(res.data)
+              if(res.status === 200 ) {
+                this.setState({
+                    projects : res.data,
+                    isLoadingData : false
+                })
+            }
+            else {
+               alert(res.error)
+            }
+    }
 
     //
     // ------------------------------------------>
@@ -45,12 +60,16 @@ class ProjectsComponent extends Component {
     openFinishFilter = (e) => {
 
         if (e.target.id === 'open') {
+            // is projects
+            this.fetchData('projects');
             e.target.style.backgroundColor = "rgb(0, 144, 207)"
             e.target.style.color = "#fff"
             this.finish.current.style.backgroundColor = "#f5f5f5"
             this.finish.current.style.color = "#888"
         }
         else {
+            // is matchs
+            this.fetchData('matchs')
             e.target.style.backgroundColor = "rgb(0, 144, 207)"
             e.target.style.color = "#fff"
             this.open.current.style.backgroundColor = "#f5f5f5"
@@ -100,8 +119,8 @@ class ProjectsComponent extends Component {
                                 </div>
                                 <div className="P-filter-right" >
                                     <div className="P-open-finish" >
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}> مسابقه</p>
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>پروژه</p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}>پروژه </p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>مسابقه</p>
                                     </div>
                                     <select selected="دسته بندی" disabled>
                                         <option value="0">انتخاب دسته بندی</option>
