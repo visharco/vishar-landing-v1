@@ -21,7 +21,7 @@ class ProjectsComponent extends Component {
 
 
     componentWillMount = async() =>{
-        const res= await GetToApi('site/projects'); 
+        const res= await GetToApi('site/projects?type=project'); 
         // console.log(res.data)
         if(res.status === 200 ) {
             this.setState({
@@ -38,8 +38,11 @@ class ProjectsComponent extends Component {
     //
     //------------------------------------------->
     fetchData = async(key) => {
+        this.setState({
+            isLoadingData : true
+        })
         const res = await GetToApi('site/projects?type=' + key); 
-              // console.log(res.data)
+              console.log(res.data)
               if(res.status === 200 ) {
                 this.setState({
                     projects : res.data,
@@ -61,7 +64,7 @@ class ProjectsComponent extends Component {
 
         if (e.target.id === 'open') {
             // is projects
-            this.fetchData('projects');
+            this.fetchData('project');
             e.target.style.backgroundColor = "rgb(0, 144, 207)"
             e.target.style.color = "#fff"
             this.finish.current.style.backgroundColor = "#f5f5f5"
@@ -69,7 +72,7 @@ class ProjectsComponent extends Component {
         }
         else {
             // is matchs
-            this.fetchData('matchs')
+            this.fetchData('match')
             e.target.style.backgroundColor = "rgb(0, 144, 207)"
             e.target.style.color = "#fff"
             this.open.current.style.backgroundColor = "#f5f5f5"
@@ -82,9 +85,11 @@ class ProjectsComponent extends Component {
 
 
         const renderProjects = (
-           this.state.projects ? this.state.projects.map((data,index) => {
+           this.state.projects.length > 0 ? this.state.projects.map((data,index) => {
            return <Project data ={data} key={index}/>
-           }) : ''
+           }) : <div className="not-found">
+               <h3>اطلاعاتی برای نمایش موجود نیست</h3>
+           </div>
         )
         return (
             <div className="projects" >
