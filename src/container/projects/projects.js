@@ -21,8 +21,8 @@ class ProjectsComponent extends Component {
 
 
     componentWillMount = async() =>{
-        const res= await GetToApi('site/projects'); 
-        console.log(res.data)
+        const res= await GetToApi('site/projects?type=project'); 
+        // console.log(res.data)
         if(res.status === 200 ) {
             this.setState({
                 projects : res.data,
@@ -35,6 +35,24 @@ class ProjectsComponent extends Component {
       
     }
 
+    //
+    //------------------------------------------->
+    fetchData = async(key) => {
+        this.setState({
+            isLoadingData : true
+        })
+        const res = await GetToApi('site/projects?type=' + key); 
+              console.log(res.data)
+              if(res.status === 200 ) {
+                this.setState({
+                    projects : res.data,
+                    isLoadingData : false
+                })
+            }
+            else {
+               alert(res.error)
+            }
+    }
 
     //
     // ------------------------------------------>
@@ -45,35 +63,41 @@ class ProjectsComponent extends Component {
     openFinishFilter = (e) => {
 
         if (e.target.id === 'open') {
+            // is projects
+            this.fetchData('project');
             e.target.style.backgroundColor = "rgb(0, 144, 207)"
             e.target.style.color = "#fff"
             this.finish.current.style.backgroundColor = "#f5f5f5"
             this.finish.current.style.color = "#888"
         }
         else {
+            // is matchs
+            this.fetchData('match')
             e.target.style.backgroundColor = "rgb(0, 144, 207)"
             e.target.style.color = "#fff"
             this.open.current.style.backgroundColor = "#f5f5f5"
             this.open.current.style.color = "#888"
         }
-        console.log('wfe')
+        // console.log('wfe')
 
     }
     render() {
 
 
         const renderProjects = (
-           this.state.projects ? this.state.projects.map((data,index) => {
+           this.state.projects.length > 0 ? this.state.projects.map((data,index) => {
            return <Project data ={data} key={index}/>
-           }) : ''
+           }) : <div className="not-found">
+               <h3>اطلاعاتی برای نمایش موجود نیست</h3>
+           </div>
         )
         return (
             <div className="projects" >
-                         <Helmet>
-                <meta charSet="utf-8" />
-                <title>لیست پروژه ها | ویشار</title>
-                <link rel="canonical" href="http://vishar.com/projects" />
-            </Helmet>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>لیست پروژه ها | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com/projects" />
+                </Helmet>
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >
@@ -90,26 +114,26 @@ class ProjectsComponent extends Component {
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="P-filter" >
-                                {/* <div className="P-filter-left">
-                                    <select selected="زمان">
+                                <div className="P-filter-left">
+                                    {/* <select selected="زمان">
                                         <option value="0">انتخاب زمان</option>
                                         <option value="A">زمان یک</option>
                                         <option value="B">زمان دو</option>
                                         <option value="C">زمان سه</option>
-                                    </select>
+                                    </select> */}
                                 </div>
-                                <div className="P-filter-right">
+                                <div className="P-filter-right" >
                                     <div className="P-open-finish" >
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}> فعال</p>
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>غیرفعال</p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}>پروژه </p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>مسابقه</p>
                                     </div>
-                                    <select selected="دسته بندی">
+                                    <select selected="دسته بندی" disabled>
                                         <option value="0">انتخاب دسته بندی</option>
                                         <option value="A">دسته اول</option>
                                         <option value="B">دسته دوم</option>
                                         <option value="C">سته سوم</option>
                                     </select>
-                                </div> */}
+                                </div>
                             </div>
 
 

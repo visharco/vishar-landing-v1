@@ -5,7 +5,7 @@
  
 
  const url ='http://api.vishar.com' ;
- const versioan ='v1' ;
+ const versioan ='v1';
  const api ='api' ;
 
  const baseURL = url + '/' + api + '/' + versioan + '/'
