@@ -22,7 +22,7 @@ class ProjectsComponent extends Component {
 
     componentWillMount = async() =>{
         const res= await GetToApi('site/projects'); 
-        console.log(res.data)
+        // console.log(res.data)
         if(res.status === 200 ) {
             this.setState({
                 projects : res.data,
@@ -56,7 +56,7 @@ class ProjectsComponent extends Component {
             this.open.current.style.backgroundColor = "#f5f5f5"
             this.open.current.style.color = "#888"
         }
-        console.log('wfe')
+        // console.log('wfe')
 
     }
     render() {
@@ -69,11 +69,11 @@ class ProjectsComponent extends Component {
         )
         return (
             <div className="projects" >
-                         <Helmet>
-                <meta charSet="utf-8" />
-                <title>لیست پروژه ها | ویشار</title>
-                <link rel="canonical" href="http://vishar.com/projects" />
-            </Helmet>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>لیست پروژه ها | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com/projects" />
+                </Helmet>
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >
@@ -100,8 +100,8 @@ class ProjectsComponent extends Component {
                                 </div>
                                 <div className="P-filter-right" >
                                     <div className="P-open-finish" >
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}> فعال</p>
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>غیرفعال</p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}> مسابقه</p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>پروژه</p>
                                     </div>
                                     <select selected="دسته بندی" disabled>
                                         <option value="0">انتخاب دسته بندی</option>
