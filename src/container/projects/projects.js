@@ -90,26 +90,26 @@ class ProjectsComponent extends Component {
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="P-filter" >
-                                {/* <div className="P-filter-left">
-                                    <select selected="زمان">
+                                <div className="P-filter-left">
+                                    {/* <select selected="زمان">
                                         <option value="0">انتخاب زمان</option>
                                         <option value="A">زمان یک</option>
                                         <option value="B">زمان دو</option>
                                         <option value="C">زمان سه</option>
-                                    </select>
+                                    </select> */}
                                 </div>
-                                <div className="P-filter-right">
+                                <div className="P-filter-right" >
                                     <div className="P-open-finish" >
                                         <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}> فعال</p>
                                         <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>غیرفعال</p>
                                     </div>
-                                    <select selected="دسته بندی">
+                                    <select selected="دسته بندی" disabled>
                                         <option value="0">انتخاب دسته بندی</option>
                                         <option value="A">دسته اول</option>
                                         <option value="B">دسته دوم</option>
                                         <option value="C">سته سوم</option>
                                     </select>
-                                </div> */}
+                                </div>
                             </div>
 
 
