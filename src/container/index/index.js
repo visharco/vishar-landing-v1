@@ -54,14 +54,17 @@ class IndexComponent extends Component {
 
                 <div  ref={this.Modal} className="modal-333" >
                             
-                        <a href="http://koodakii.vishar.com/" target="_blank">
+                        <div >
 
                         
                         
                             <div className="img-index-popup">
-                            <div className="close-button" onClick={() => this._actionModal('close')}></div>
+                                <div className="close-button" onClick={() => this._actionModal('close')}></div>
+                                <a href="http://koodakii.vishar.com/" target="_blank" className="pop-link">
+
+                                </a>
                             </div>
-                        </a>
+                        </div>
                 </div>
 
                 <GetStarted />
