@@ -265,10 +265,13 @@ p {
         -webkit-box-orient: vertical
     }
 
-    .howWorking .container {
+    /* .howWorking .container {
         padding: 10px 20px
-    }
+    } */
 
+    .how-work-box {
+        width: 100%;
+    }
     .how-text p {
         width: 100%
     }
