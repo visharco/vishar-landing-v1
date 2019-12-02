@@ -272,6 +272,11 @@ p {
     .how-work-box {
         width: 100%;
     }
+    
+    .how-work-box h1 {
+        text-align: center;
+        
+    }
     .how-text p {
         width: 100%
     }
