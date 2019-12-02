@@ -123,7 +123,7 @@ class Categories extends Component {
                                         <p>{data.desc}</p>
                                         <div className="cat--see-more">
                                             <p>نمایش بیشتر</p>
-                                            <i class="fa fa-arrow-left"></i>
+                                            <i className="fa fa-arrow-left"></i>
                                         </div>
                                     </div>
                                 </div>

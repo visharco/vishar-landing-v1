@@ -273,12 +273,17 @@ p {
         width: 100%;
     }
     
-    .how-work-box h1 {
+    .how-work-box  h1 {
         text-align: center;
-        
+      
     }
     .how-text p {
         width: 100%
+    }
+
+    .how-working-text {
+        font-size: 20px;
+        padding-bottom: 25px;
     }
 
     .col-50,
