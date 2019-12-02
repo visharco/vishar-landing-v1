@@ -226,7 +226,10 @@ p {
 
 
 
-
+.how-working-text {
+    font-size: 20px;
+    padding-bottom: 25px;
+}
 
 
 .how-work-box {
@@ -281,10 +284,7 @@ p {
         width: 100%
     }
 
-    .how-working-text {
-        font-size: 20px;
-        padding-bottom: 25px;
-    }
+ 
 
     .col-50,
     .how-text {
