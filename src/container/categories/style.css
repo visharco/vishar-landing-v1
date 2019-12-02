@@ -12,7 +12,7 @@
 .C-search-box input:focus{box-shadow:0 6px 15px -6px #80808094;-webkit-transition:all .2s linear;transition:all .2s linear}
 .C-search-box img{background-color:#0090CF;width:40px;padding:12px;border-radius:50%;top:10px;left:10px}
 .C-search-box img:hover{opacity:.8;-webkit-transition:all .2s linear;transition:all .2s linear}
-.C-search-result{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;flex-direction:row-reverse}
+.C-search-result{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;direction: rtl;}
 .close-button{
 
     width: 40px;
