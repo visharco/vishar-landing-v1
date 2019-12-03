@@ -12,8 +12,26 @@
 .C-search-box input:focus{box-shadow:0 6px 15px -6px #80808094;-webkit-transition:all .2s linear;transition:all .2s linear}
 .C-search-box img{background-color:#0090CF;width:40px;padding:12px;border-radius:50%;top:10px;left:10px}
 .C-search-box img:hover{opacity:.8;-webkit-transition:all .2s linear;transition:all .2s linear}
-.C-search-result{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;flex-direction:row-reverse}
-.close-button{width:50px;height:50px;background-color:#fff;background-image:url(../../assets/icons/cancel.svg);background-size:40%;background-position:center;background-repeat:no-repeat;top:20px;right:20px;border-radius:50px;-webkit-transition:all .2s linear;transition:all .2s linear;border:2px solid #999}
+.C-search-result{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;direction: rtl;}
+.close-button{
+
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-image: url(/static/media/cancel.0ad0ae91.svg);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 10px;
+    right: 10px;
+    border-radius: 50px;
+    transition: all .2s linear;
+    border: 2px solid #999;
+
+
+    /* width:50px;height:50px;background-color:#fff;background-image:url(../../assets/icons/cancel.svg);background-size:40%;background-position:center;background-repeat:no-repeat;top:20px;right:20px;border-radius:50px;-webkit-transition:all .2s linear;transition:all .2s linear;border:2px solid #999} */
+
+}
 .close-button:hover{opacity:.5}
 .C-search-pagination{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:50px;font-size:25px;font-weight:900}
 @media screen and (max-width:700px){.C-title .container{padding:50px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}
