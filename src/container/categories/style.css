@@ -1,19 +1,106 @@
-.C-title .container-fluid{background-color:#f2f2f2}
-.C-title .container{padding:130px 50px 50px;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-webkit-box-align:center;align-items:center}
-.C-title{text-align:right}
-.C-title-right h1{color:#333;margin-bottom:10px}
-.C-title-right p{font-size:16px;color:#4c4c4c}
-.C-title-right{width:50%}
-.C-search .container-fluid{background-color:#fff}
-.C-search .container{margin:auto;padding:50px 0}
-.C-search-box{display:-webkit-box;display:flex;width:90%;margin:50px auto;position:relative}
-.C-search-box img,.close-button{position:absolute;cursor:pointer}
-.C-search-box input{border:1px solid rgba(233,233,233,.8);width:100%;height:60px;border-radius:30px;margin:auto;padding:0 30px;direction:rtl;-webkit-transition:all .2s linear;transition:all .2s linear}
-.C-search-box input:focus{box-shadow:0 6px 15px -6px #80808094;-webkit-transition:all .2s linear;transition:all .2s linear}
-.C-search-box img{background-color:#0090CF;width:40px;padding:12px;border-radius:50%;top:10px;left:10px}
-.C-search-box img:hover{opacity:.8;-webkit-transition:all .2s linear;transition:all .2s linear}
-.C-search-result{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;direction: rtl;}
-.close-button{
+.C-title .container-fluid {
+    background-color: #f2f2f2
+}
+
+.C-title .container {
+    padding: 130px 50px 50px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center
+}
+
+.C-title {
+    text-align: right
+}
+
+.C-title-right h1 {
+    color: #333;
+    margin-bottom: 10px
+}
+
+.C-title-right p {
+    font-size: 16px;
+    color: #4c4c4c
+}
+
+.C-title-right {
+    width: 50%
+}
+
+.C-search .container-fluid {
+    background-color: #fff
+}
+
+.C-search .container {
+    margin: auto;
+    padding: 50px 0
+}
+
+.C-search-box {
+    display: -webkit-box;
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    position: relative
+}
+
+.C-search-box img,
+.close-button {
+    position: absolute;
+    cursor: pointer
+}
+
+.C-search-box input {
+    border: 1px solid rgba(233, 233, 233, .8);
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 0 30px;
+    direction: rtl;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.C-search-box input:focus {
+    box-shadow: 0 6px 15px -6px #80808094;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.C-search-box img {
+    background-color: #0090CF;
+    width: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px
+}
+
+.C-search-box img:hover {
+    opacity: .8;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.C-search-result {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    direction: ltr;
+}
+
+.close-button {
 
     width: 40px;
     height: 40px;
@@ -32,8 +119,33 @@
     /* width:50px;height:50px;background-color:#fff;background-image:url(../../assets/icons/cancel.svg);background-size:40%;background-position:center;background-repeat:no-repeat;top:20px;right:20px;border-radius:50px;-webkit-transition:all .2s linear;transition:all .2s linear;border:2px solid #999} */
 
 }
-.close-button:hover{opacity:.5}
-.C-search-pagination{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:50px;font-size:25px;font-weight:900}
-@media screen and (max-width:700px){.C-title .container{padding:50px;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}
-.C-title-right{width:100%;text-align:center}
+
+.close-button:hover {
+    opacity: .5
+}
+
+.C-search-pagination {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 900
+}
+
+@media screen and (max-width:700px) {
+    .C-title .container {
+        padding: 50px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column
+    }
+
+    .C-title-right {
+        width: 100%;
+        text-align: center
+    }
 }
