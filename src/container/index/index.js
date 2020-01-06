@@ -17,7 +17,7 @@ class IndexComponent extends Component {
     }
 
     componentDidMount() {
-      this._actionModal('open');  // TODO: to lunch popup after get image
+     // this._actionModal('open');  // TODO: to lunch popup after get image
     }
 
 
