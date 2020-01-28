@@ -20,7 +20,6 @@ class IndexComponent extends Component {
      // this._actionModal('open');  // TODO: to lunch popup after get image
     }
 
-
     Modal = React.createRef();
 
     _actionModal = (val) => {
@@ -40,31 +39,22 @@ class IndexComponent extends Component {
         } 
     }
 
-
     render() { 
         return ( 
             <div>
-
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>طراحی آنلاین سریع و باکیفیت پروژه های گرافیکی | ویشار</title>
-                <link rel="canonical" href="http://vishar.com" />
-            </Helmet>
-
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>طراحی آنلاین سریع و باکیفیت پروژه های گرافیکی | ویشار</title>
+                    <link rel="canonical" href="http://vishar.com" />
+                </Helmet>
 
                 <div  ref={this.Modal} className="modal-333" >
-                            
-                        <div >
-
-                        
-                        
-                            <div className="img-index-popup">
-                                <div className="close-button" onClick={() => this._actionModal('close')}></div>
-                                <a href="http://koodakii.vishar.com/" target="_blank" className="pop-link">
-
-                                </a>
-                            </div>
+                    <div >
+                        <div className="img-index-popup">
+                            <div className="close-button" onClick={() => this._actionModal('close')}></div>
+                            <a href="http://koodakii.vishar.com/" target="_blank" className="pop-link"></a>
                         </div>
+                    </div>
                 </div>
 
                 <GetStarted />
