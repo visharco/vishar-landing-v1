@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Helmet} from "react-helmet";
+import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 
 import Categories from '../../component/index/categories/categories'
 import GetStarted from '../../component/index/getStarted/getStarted'
@@ -13,34 +13,34 @@ import './index.css'
 class IndexComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
 
     componentDidMount() {
-     // this._actionModal('open');  // TODO: to lunch popup after get image
+        // this._actionModal('open');  // TODO: to lunch popup after get image
     }
 
     Modal = React.createRef();
 
     _actionModal = (val) => {
-        if(val === 'open'){
+        if (val === 'open') {
             const body = document.body;
             body.style.height = '100vh';
             body.style.overflowY = 'hidden';
             this.Modal.current.style.display = 'block';
         }
-        else if (val === 'close'){
+        else if (val === 'close') {
             const body = document.body;
             body.style.position = '';
             body.style.top = '';
             body.style.height = '';
             body.style.overflowY = '';
             this.Modal.current.style.display = 'none';
-        } 
+        }
     }
 
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -48,7 +48,7 @@ class IndexComponent extends Component {
                     <link rel="canonical" href="http://vishar.com" />
                 </Helmet>
 
-                <div  ref={this.Modal} className="modal-333" >
+                <div ref={this.Modal} className="modal-333" >
                     <div >
                         <div className="img-index-popup">
                             <div className="close-button" onClick={() => this._actionModal('close')}></div>
@@ -64,8 +64,8 @@ class IndexComponent extends Component {
                 <SampleDesigns />
                 <CustomerComment />
             </div>
-         );
+        );
     }
 }
- 
+
 export default IndexComponent;

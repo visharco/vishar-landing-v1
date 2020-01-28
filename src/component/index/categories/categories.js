@@ -15,6 +15,8 @@ import './style.css';
 import priceDigit from '../../priceDigit/priceDigit';
 
 
+
+
 class Categories extends Component {
     constructor(props) {
         super(props);

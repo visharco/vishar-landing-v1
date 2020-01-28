@@ -8,6 +8,12 @@ import img02 from '../../../assets/images/index/02.png';
 import img03 from '../../../assets/images/index/03.png';
 
 
+import PartOne from './animationComponent/partOne/partOne';
+import PartTwo from './animationComponent/partTwo/partTwo';
+import PartThree from './animationComponent/partThree/partThree';
+import PartFour from './animationComponent/partFour/partFour';
+
+
 class HowWorking extends Component {
     constructor(props) {
         super(props);
@@ -19,30 +25,11 @@ class HowWorking extends Component {
     render() {
         return (
             <div className="howWorking">
-                {/* <div className="row">
-                    <div className="how-work-box">
-                        <div className="main-prt-four" ></div>
-                        <h1 className="how-working-text">هزینه طراحی چقدر می شود؟</h1>
-                        <p>با توجه به طبقه بندی های مختلف هزینه دریافتی برای سفارش های مختلف متفاوت می باشد. هر طبقه بندی دارای زیر مجموعه جدا می باشد که هزینه هر کدام در مقابل آن نوشته شده است.</p>
-                    </div>
-                    <div className="how-work-box">
-                        <div className="main-prt-three"></div>
-                        <h1 className="how-working-text">چه پروژه هایی امکان پذیر است؟</h1>
-                        <p>خیلی چیزها! طراحان حرفه ای ما می توانند در زمینه طراحی لوگوهای مختلف، وب سایت ها، بنرهای تبلیغاتی و غیره فعالیت کنند. برای کسب اطلاعات بیشتر میتوانید دسته بندی خدمات مختلف ارائه شده توسط ما را در سایت ملاحظه بفرمایید. بسته به پیچیدگی یا ساده بودن طراحی، زمان تحویل سفارش متفاوت می باشد. برای طراحی های ساده تر، زمان کمتر و برای طراحی های پیچیده تر زمان بیشتری صرف خواهد شد.</p>
-                    </div>
-                    <div className="how-work-box">
-                        <div className="main-prt-two"></div>
-                        <h1 className="how-working-text">به ما در مورد نیاز خود بگویید</h1>
-                        <p>در ابتدا توضیح مختصری در مورد نیازهای خود به طراحان ما ارائه دهید. این کار تنها چند دقیقه از وقت شما را خواهد گرفت. مهم نیست پروژه شما چه مقدار ساده یا پیچیده باشد، تخصص ما اجرایی کردن آنهاست.</p>
-                    </div>
-                    <div className="how-work-box">
-                        <div className="main-prt-one"></div>
-                         <h1 className="how-working-text">ویشار چگونه کار میکند ؟</h1>
-                         <p>ما زمینه ای را فراهم کردیم تا مجرب ترین و قوی ترین طراحان در زمینه های مختلف گرد هم بیایند. مجموعه ویشار با بهره گیری از گروه های حرفه ای در حوزه های مختلف طراحی، عکس برداری، فیلم برداری و... قادر به پذیرش کلیه پروژه های گرافیکی و تبلیغاتی شما می باشد.</p>
-                   
-                    </div>
-              
-                </div> */}
+               
+                    <PartOne />
+                    <PartTwo />
+                    <PartThree />
+                    <PartFour />
 
 
 
