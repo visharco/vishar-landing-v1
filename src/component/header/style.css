@@ -9,8 +9,8 @@
 .linkActive,.menu-links a:hover{border:2px solid #333}
 .menu-link{margin:10px;padding:0 5px;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;cursor:pointer}
 .menu-login{padding:10px;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;cursor:pointer;transition:all .2s linear}
-.menu-login-text{background-color:#2D9CDB;border-radius:30px;width:200px;line-height:40px;color:#fff;text-align:center;font-weight:900;border:2px solid #419cdb;transition:all .2s linear}
-.menu-login-text:hover{background-color:transparent;-webkit-transition:all .2s linear;transition:all .2s linear;color:#419cdb}
+.menu-login-text{background-color:#39b8b8;border-radius:30px;width:200px;line-height:40px;color:#fff;text-align:center;font-weight:900;border:2px solid #39b8b8;transition:all .2s linear}
+.menu-login-text:hover{background-color:transparent;-webkit-transition:all .2s linear;transition:all .2s linear;color:#39b8b8}
 .toggleBtn{display:none}
 .menuTablet{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;width:100%;-webkit-box-pack:justify;justify-content:space-between}
 .headerMenuDown{display:-webkit-box;display:flex}
@@ -30,7 +30,7 @@
 .menu-login{width:100%;padding:0}
 .hamburger{width:60px;height:60px;position:relative;cursor:pointer;z-index:3}
 .line,.lineX{width:60%;height:2px;position:absolute;border-radius:5px;box-shadow:1px 1px 1px 1px rgba(51,51,51,.13)}
-.line{background-color:#2D9CDB;left:12px}
+.line{background-color:#39b8b8;left:12px}
 .lineX{background-color:#fff;left:9px}
 .line1{top:14px;-webkit-transform:rotate(0);transform:rotate(0);-webkit-transition:top .2s .2s linear,-webkit-transform .2s linear;transition:top .2s .2s linear,-webkit-transform .2s linear;transition:transform .2s linear,top .2s .2s linear;transition:transform .2s linear,top .2s .2s linear,-webkit-transform .2s linear}
 .line2{top:25px;opacity:1;-webkit-transition:opacity .2s .2s linear;transition:opacity .2s .2s linear}
