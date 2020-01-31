@@ -18,7 +18,7 @@ class PartTwo extends Component {
                     <p>در ابتدا توضیح مختصری در مورد نیازهای خود به طراحان ما ارائه دهید. این کار تنها چند دقیقه از وقت شما را خواهد گرفت. مهم نیست پروژه شما چه مقدار ساده یا پیچیده باشد، تخصص ما اجرایی کردن آنهاست.</p>
                 </div>
                
-    <div class="main-anim">
+    <div class="anim-photo">
         <svg height="100%" viewBox="0 0 1134 754" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="woman-customer">
             <g clip-path="url(#clip0)">

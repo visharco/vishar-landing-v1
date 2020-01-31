@@ -60,9 +60,24 @@
     }
 }
 
-.main-anim {
+.anim-photo {
     width: 50%;
     height: 550px;
     padding: 5em 3em;
     text-align: center;
+}
+
+
+@media screen and (max-width:1096px) {
+    .row {
+        flex-direction: column;
+    }
+    .anim-photo , .anim-text {
+        width: 100%;
+        padding: 2em;
+        height: auto;
+    }
+    svg {
+        width: 70%;
+    }
 }
