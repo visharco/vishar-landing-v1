@@ -1,56 +1,36 @@
 
-
-#right-wheel,
-#left-wheel {
-
-    animation: wheel 1s infinite linear;
+#speadOne , #speadTwo {
+    animation: move 4s infinite alternate;
     transform-origin: center;
     transform-box: fill-box;
 }
 
-#head {
-    animation: bike 1s infinite ease-in-out alternate;
+#man {
+    animation: man 2s infinite alternate;
 }
 
-#hand {
-    animation: handing 1s infinite ease-in-out alternate;
-}
 
-@keyframes wheel {
-    from {
-        transform: rotate(0);
+
+@keyframes move {
+
+    form {  
+        transform: translate3d(-200%, 0, 0);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: translate3d(200%, 0, 0);
     }
 }
 
-@keyframes bike {
-    from {
-        transform: rotateX(0) rotateZ(0);
+@keyframes man {
+    form {
+      transform: rotateX(0)
     }
 
     to {
-        transform: rotateX(15deg) rotateZ(1deg);
-    }
-}
-
-@keyframes handing {
-    from {
-        transform: rotateY(0);
-    }
-
-    to {
-        transform: rotateY(5deg);
+        transform: rotateX(20deg)
     }
 }
 
 
 
-
-
-
-.anim-text p {
-
-}
