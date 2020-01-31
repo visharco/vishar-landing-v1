@@ -1,51 +1,68 @@
 
-
-#right-wheel,
-#left-wheel {
-
-    animation: wheel 1s infinite linear;
+#woman-head {
+    animation: womanHead 3s infinite alternate;
     transform-origin: center;
     transform-box: fill-box;
+
 }
 
-#head {
-    animation: bike 1s infinite ease-in-out alternate;
+#point-one {
+    animation: pointed 3s infinite ease-in-out alternate;
+    opacity: 0;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+
+
 }
 
-#hand {
-    animation: handing 1s infinite ease-in-out alternate;
+#point-two {
+    animation: pointed 3s infinite ease-in-out alternate;
+    opacity: 0;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+
+
 }
 
-@keyframes wheel {
-    from {
-        transform: rotate(0);
+#point-three {
+    animation: pointed 3s infinite ease-in-out alternate;
+    opacity: 0;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+
+
+}
+
+#point-four {
+    animation: pointed 3s infinite ease-in-out alternate;
+    opacity: 0;
+    animation-delay: 9s;
+
+}
+
+@keyframes womanHead {
+    form {
+        transform: rotate(-10deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(15deg);
     }
 }
 
-@keyframes bike {
-    from {
-        transform: rotateX(0) rotateZ(0);
+@keyframes pointed {
+    form {
+        opacity: 0;
     }
 
     to {
-        transform: rotateX(15deg) rotateZ(1deg);
+        opacity: 1;
     }
 }
 
-@keyframes handing {
-    from {
-        transform: rotateY(0);
-    }
-
-    to {
-        transform: rotateY(5deg);
-    }
+.main-anim {
+    width: 50%;
+    height: 550px;
+    padding: 5em 3em;
+    text-align: center;
 }
-
-
-
-
